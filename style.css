@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://themewagon.github.io/eflyer/images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+.head-name{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+.head-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search-bar{
+    margin-top: 2vh;
+    margin-left: 20vw;
+    display: flex;
+}
+.search-bar{
+    width: 40vw;
+    height: 35px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: transparent;
+    border-radius: 3px 0 0 3px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.icon-name-1:hover{
+    cursor: pointer;
+    color: #f36522;
+    scale: 1.1;
+}
+.icon-name-2:hover{
+    cursor: pointer;
+    color: #f36522;
+    scale: 1.1;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1023px){
+    .search-bar{
+        margin-left: 30px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px){
+    #search-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 165px;
+    }
+    .icons{
+        font-size: 0px;
+        margin-left: -55px;
+    }
+    .head-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+}
+@media only screen and (max-width: 768px){
+    #search-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -5px;
+    }
+    .icons{
+        font-size: 0px;
+        margin-left: -55px;
+    }
+    .head-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+}
